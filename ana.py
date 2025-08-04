@@ -1,6 +1,5 @@
 participite = []
-import random
-x=random.getrandbits(5)
+x= int(input("enter a random number"))
 print(x)
 for i in range (1, x+1):
     g= input("give team n¹")
