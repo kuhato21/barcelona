@@ -1,6 +1,13 @@
 participite = []
 x= int(input("enter a random number"))
-print(x)
+try:
+  print(x)
+except:
+  print("Something went wrong")
+finally:
+  print("The 'try except' is finished") 
+if x < 0:
+  raise Exception("Sorry, no numbers below zero") 
 for i in range (1, x+1):
     g= input("give team n¹")
     participite.append(g)
