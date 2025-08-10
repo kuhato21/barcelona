@@ -1,0 +1,1 @@
+('/home/kuhato/Desktop/barcelona_clean/build/ana/PYZ-00.pyz', [])
