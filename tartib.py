@@ -1,34 +1,27 @@
-fruits = ['apple', 'banana', 'cherry']
+import time
+from TheList import unsorted_list
 
-fruits.pop(2)
+start_time = time.time()
 
-print(fruits)
-#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-newlist = []
 
-for x in fruits:
-  if "a" in x:
-    newlist.append(x)
+sort1 = sorted(unsorted_list)
+print(sort1[:10])
+end_time = time.time()
+# What is the difference between .sort and (sorted ?)
+print(f"Execution time for native sorted : {end_time - start_time:.6f} seconds")
+start_time2 = time.time()
 
-print(newlist)
-#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Empty list
-x = []
 
-# List with initial values
-y = [1, 2, 3, 4, 5]
+unsorted_list.sort()
+print(unsorted_list[:10])
+end_time2 = time.time()
+# What is the difference between .sort and (sorted ?)
+print(f"Execution time for native sort : {end_time2 - start_time2:.6f} seconds")
 
-# List with mixed types
-z = [1, "hello", 3.14, True]
+start_time1 = time.time()
 
-print(x)
-print(y)
-print(z)
-#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-fruits = ["apple", "banana", "cherry"]
+#Your Method
 
-x = fruits.count("apple")
+end_time1 = time.time()
 
-print(x)
-
+print(f"Execution time for my first try to sort : {end_time1 - start_time1:.6f} seconds")
